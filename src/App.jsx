@@ -15,8 +15,8 @@ export default function App() {
         
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
           <div className="space-y-2">
-            <h1 className="text-6xl font-black tracking-tighter text-slate-900">
-              Cook<span className="text-orange-500">Book.</span>
+            <h1 className="text-3xl font-black tracking-tighter text-slate-900">
+              Sanchos-Cook<span className="text-orange-500">Book.</span>
             </h1>
             <p className="text-slate-400 font-bold uppercase tracking-[0.2em] text-xs">Your Local Recipe Vault</p>
           </div>
@@ -53,7 +53,7 @@ export default function App() {
             <p className="text-slate-400 mt-2 font-medium">Add a recipe to start your collection.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-6">
             {recipes.map(recipe => (
               <RecipeCard 
                 key={recipe.id} 

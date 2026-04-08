@@ -42,7 +42,7 @@ export default function RecipeForm({ initialData, onComplete }) {
           <label className="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">Recipe Name</label>
           <input 
             type="text"
-            placeholder="e.g. Grandma's Pasta"
+            placeholder="e.g. Fufu & Kati-kati"
             className="w-full p-4 bg-slate-50 border-2 border-transparent rounded-2xl focus:border-orange-400 focus:bg-white outline-none transition-all font-medium"
             value={formData.name}
             onChange={e => setFormData({...formData, name: e.target.value})}
